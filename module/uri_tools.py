@@ -18,3 +18,13 @@ class Sftp:
         with session.cd(tmp_dir_path):
             print 'uploading ' + file
             session.put(file)
+
+    def list(self, session,remotepath):
+        found_folders = session.listdir(remotepath)
+        print str(found_folders)
+        return str(found_folders)
+
+
+
+
+

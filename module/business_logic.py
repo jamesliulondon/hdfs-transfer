@@ -19,5 +19,6 @@ class Filterlogic:
     def get_ftp_directory(self, source_path):
         folder1 = source_path.split('/')[-3] # Normally the date
         folder2 = source_path.split('/')[-2] # Normally the LEI
-        return folder1 + '/' + folder2
+        #return folder1 + '/' + folder2
+        return folder2
          
